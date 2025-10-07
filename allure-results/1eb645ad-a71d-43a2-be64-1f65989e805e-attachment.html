@@ -1,0 +1,35 @@
+<div>POST to http://localhost:8087/ws</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;SOAP-ENV:Header/&gt;
+  &lt;SOAP-ENV:Body&gt;
+    &lt;ns2:getEmployeeByIdRequest xmlns:ns2=&quot;http://interfaces.soap.springboot.example.com&quot;&gt;
+      &lt;ns2:employeeId&gt;348861&lt;/ns2:employeeId&gt;
+    &lt;/ns2:getEmployeeByIdRequest&gt;
+  &lt;/SOAP-ENV:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: */*</div>
+            <div>Content-Type: text/xml; charset=utf-8</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;http://localhost:8087/ws&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: text/xml; charset=utf-8&#39; -d &#39;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;SOAP-ENV:Header/&gt;
+  &lt;SOAP-ENV:Body&gt;
+    &lt;ns2:getEmployeeByIdRequest xmlns:ns2=&quot;http://interfaces.soap.springboot.example.com&quot;&gt;
+      &lt;ns2:employeeId&gt;348861&lt;/ns2:employeeId&gt;
+    &lt;/ns2:getEmployeeByIdRequest&gt;
+  &lt;/SOAP-ENV:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;&#39;
+    </div>
+
