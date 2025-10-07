@@ -1,0 +1,30 @@
+<div>POST to http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</div>
+
+    <h4>Body</h4>
+    <div>
+    <pre class="preformated-text">
+&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;soap:Body&gt;
+    &lt;ListOfContinentsByName xmlns=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;/&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;    </pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>SOAPAction: http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso/ListOfContinentsByName</div>
+            <div>Accept: */*</div>
+            <div>Content-Type: text/xml; charset=utf-8</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso&#39; -H &#39;SOAPAction: http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso/ListOfContinentsByName&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: text/xml; charset=utf-8&#39; -d &#39;&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;soap:Body&gt;
+    &lt;ListOfContinentsByName xmlns=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;/&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;&#39;
+    </div>
+
